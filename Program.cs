@@ -5,17 +5,21 @@
 a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
- */
+
+// Определяем переменные 
 int num1;
 int num2;
 
+// Ввод даных
 Console.WriteLine("Введите первое число: ");
 num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите второе число: ");
 num2 = Convert.ToInt32(Console.ReadLine());
 
+// Сравниваем значения
 if (num1>num2) {
+    // Выводим на экран значения
     Console.WriteLine("Наибольшее число " + num1);
     Console.WriteLine("Наименьшее число " + num2);
 }
@@ -23,7 +27,7 @@ else if (num1<num2) {
     Console.WriteLine("Наибольшее число " + num2);
     Console.WriteLine("Наименьшее число " + num1);
 }
-
+*/
 
 
 /*__________________________________________________________________________________________________
@@ -31,16 +35,42 @@ else if (num1<num2) {
 2, 3, 7 -> 7
 44 5 78 -> 78
 22 3 9 -> 22
+*/
+
+// Определяем переменные
+int num1;
+int num2;
+int num3;
+int max;
+
+// Ввод даных
+Console.WriteLine("Введите первое число: ");
+num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите второе число: ");
+num2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите третье число: ");
+num3 = Convert.ToInt32(Console.ReadLine());
+
+// Сравниваем значения
+if (num1>num2) {
+    max = num1;
+}
+else {
+    max = num2;
+}
+
+if (max>num3){
+    Console.WriteLine("Наибольше число из трёх введёных: " + max);
+}
+else {
+    Console.WriteLine("Наибольше число из трёх введёных: " + num3);
+}
 
 
 
-
-
-
-
-
-
-
+/*
 Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 4 -> да
 -3 -> нет
