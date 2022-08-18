@@ -4,8 +4,25 @@
 a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
+ */
+int num1;
+int num2;
+
+Console.WriteLine("Введите первое число: ");
+num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите второе число: ");
+num2 = Convert.ToInt32(Console.ReadLine());
+
+if (num1>num2) {
+    Console.Write("Наибольшее число " + num1);
+}
+else if (num1<num2) {
+    Console.Write("Наибольшее число " + num2);
+}
 
 
+/*
 Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 2, 3, 7 -> 7
 44 5 78 -> 78
